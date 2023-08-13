@@ -1,13 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { LoginScreen } from "./src/screens";
+import { Providers } from "./src/providers";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    // <View style={styles.container}>
+    //   <LoginScreen />
+    //   <StatusBar style="auto" />
+    // </View>
+    <Providers>
       <LoginScreen />
-      <StatusBar style="auto" />
-    </View>
+    </Providers>
   );
 }
 
