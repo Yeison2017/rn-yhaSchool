@@ -1,28 +1,39 @@
 import { StyleSheet } from "react-native";
 
-import { Box, Button, Text, Input, VStack } from "../../components";
+import {
+  Box,
+  Button,
+  Text,
+  Input,
+  VStack,
+  MobileLogin,
+  SafeAreaLayout,
+} from "../../components";
 import { colors, fontSizes } from "../../theme";
 
 const LoginScreen = () => {
   return (
-    <Box style={styles.container}>
-      <VStack style={styles.body}>
-        <Text style={styles.title}>INICIAR SESIÓN</Text>
+    <SafeAreaLayout>
+      <Box style={styles.container}>
+        <VStack style={styles.body}>
+          <MobileLogin style={styles.mobileLogin} />
+          <Text style={styles.title}>INICIAR SESIÓN</Text>
 
-        <VStack style={styles.containerInput}>
-          <Input>
-            <Input.Input placeholder="Usuario" />
-          </Input>
-          <Input>
-            <Input.Input placeholder="Contraseña" />
-          </Input>
+          <VStack style={styles.containerInput}>
+            <Input>
+              <Input.Input placeholder="Usuario" />
+            </Input>
+            <Input>
+              <Input.Input placeholder="Contraseña" />
+            </Input>
+          </VStack>
+
+          <Button style={styles.button}>
+            <Button.Text>Iniciar sesión</Button.Text>
+          </Button>
         </VStack>
-
-        <Button style={styles.button}>
-          <Button.Text>Iniciar sesión</Button.Text>
-        </Button>
-      </VStack>
-    </Box>
+      </Box>
+    </SafeAreaLayout>
   );
 };
 
@@ -30,9 +41,9 @@ export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
     marginHorizontal: 20,
+    marginTop: 50,
+    marginBottom: 20,
   },
   body: {
     gap: 50,
@@ -48,5 +59,11 @@ const styles = StyleSheet.create({
   button: {
     width: 142,
     alignSelf: "center",
+  },
+  mobileLogin: {
+    justifyContent: "center",
+    alignSelf: "center",
+    width: 200,
+    height: 200,
   },
 });
