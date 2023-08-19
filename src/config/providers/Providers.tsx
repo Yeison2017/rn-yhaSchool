@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 import GluestackUIProvider from "./GluestackUIProvider";
 import { config } from "../theme";
 import SafeAreaProvider from "./SafeAreaProvider";
+import NavigationProvider from "./NavigationProvider";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +12,9 @@ interface Props {
 const Providers = ({ children }: Props) => {
   return (
     <GluestackUIProvider config={config.theme}>
-      <SafeAreaProvider>{children}</SafeAreaProvider>
+      <SafeAreaProvider>
+        <NavigationProvider>{children}</NavigationProvider>
+      </SafeAreaProvider>
     </GluestackUIProvider>
   );
 };

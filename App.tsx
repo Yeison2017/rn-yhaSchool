@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
-import { LoginScreen } from "./src/screens";
 import { Providers } from "./src/config/providers";
 import { useLoadFonts } from "./src/config/theme";
+import { StackApp } from "./src/navigation";
 
 const App = () => {
   const { fontsLoaded } = useLoadFonts();
@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <Providers>
-      <LoginScreen />
+      <StackApp />
     </Providers>
   );
 };

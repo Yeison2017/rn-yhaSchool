@@ -1,12 +1,5 @@
 import { StyleSheet } from "react-native";
-import {
-  useFonts,
-  Nunito_400Regular,
-  Lato_400Regular,
-  Inter_900Black,
-  RobotoMono_400Regular,
-  RobotoCondensed_400Regular,
-} from "@expo-google-fonts/dev";
+import { useNavigation } from "@react-navigation/native";
 
 import {
   Box,
@@ -18,8 +11,10 @@ import {
   SafeAreaLayout,
 } from "../../components";
 import { colors, fontSizes } from "../../config/theme";
+import { useNavigationApp } from "../../interfaces";
 
 const LoginScreen = () => {
+  const { navigation } = useNavigationApp();
   return (
     <SafeAreaLayout>
       <Box style={styles.container}>
@@ -36,7 +31,10 @@ const LoginScreen = () => {
             </Input>
           </VStack>
 
-          <Button style={styles.button}>
+          <Button
+            onPress={() => navigation.navigate("Home")}
+            style={styles.button}
+          >
             <Button.Text>Iniciar sesión</Button.Text>
           </Button>
         </VStack>
