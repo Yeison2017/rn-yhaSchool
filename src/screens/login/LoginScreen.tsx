@@ -1,4 +1,12 @@
 import { StyleSheet } from "react-native";
+import {
+  useFonts,
+  Nunito_400Regular,
+  Lato_400Regular,
+  Inter_900Black,
+  RobotoMono_400Regular,
+  RobotoCondensed_400Regular,
+} from "@expo-google-fonts/dev";
 
 import {
   Box,
@@ -9,7 +17,7 @@ import {
   MobileLogin,
   SafeAreaLayout,
 } from "../../components";
-import { colors, fontSizes } from "../../theme";
+import { colors, fontSizes } from "../../config/theme";
 
 const LoginScreen = () => {
   return (
@@ -52,6 +60,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: fontSizes.lg,
     color: colors.primary700,
+    // fontFamily: "RobotoCondensed_400Regular",
   },
   containerInput: {
     gap: 8,

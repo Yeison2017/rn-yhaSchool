@@ -1,12 +1,12 @@
 import { Text } from "react-native";
-import { styled } from "../../../../theme";
+import { styled } from "../../../../config/theme";
 
 export default styled(
   Text,
   {
     color: "$textLight700",
     fontWeight: "$normal",
-    fontFamily: "$body",
+    fontFamily: "$textRegular",
     fontStyle: "normal",
     letterSpacing: "$md",
 

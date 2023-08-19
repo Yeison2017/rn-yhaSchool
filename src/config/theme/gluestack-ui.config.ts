@@ -1,3 +1,5 @@
+import { FONTS, FONTS_NAME } from "../constants";
+
 export const config = {
   // componentPath: "../../components",
   componentPath: "../components",
@@ -707,6 +709,8 @@ export const config = {
         heading: undefined,
         body: undefined,
         mono: undefined,
+        textRegular: FONTS_NAME.textRegular,
+        textBold: FONTS_NAME.textBold,
       },
       fontSizes: {
         "2xs": 10,

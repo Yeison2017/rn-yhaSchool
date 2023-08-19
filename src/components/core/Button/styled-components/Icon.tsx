@@ -1,4 +1,4 @@
-import { styled } from "../../../../theme";
+import { styled } from "../../../../config/theme";
 import { AsForwarder } from "@gluestack-style/react";
 
 export default styled(

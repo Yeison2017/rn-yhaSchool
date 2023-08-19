@@ -1,11 +1,11 @@
 import { Text } from "react-native";
-import { styled } from "../../../../theme";
+import { styled } from "../../../../config/theme";
 
 export default styled(
   Text,
   {
     color: "$textLight0",
-    fontFamily: "$body",
+    fontFamily: "$textRegular",
     //@ts-ignore
     userSelect: "none",
   },

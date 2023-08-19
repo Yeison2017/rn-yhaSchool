@@ -1,4 +1,4 @@
-import { styled } from "../../../../theme";
+import { styled } from "../../../../config/theme";
 import { View } from "react-native";
 
 export default styled(

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { colors } from "../../theme";
+import { colors } from "../../config/theme";
 import { Box } from "../core";
 import { KeyboardAwareScrollView } from "@mtourj/react-native-keyboard-aware-scroll-view";
 

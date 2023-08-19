@@ -9,7 +9,7 @@ import Svg, {
   Circle,
   SvgProps,
 } from "react-native-svg";
-import { colors } from "../../theme";
+import { colors } from "../../config/theme";
 
 interface Props extends SvgProps {
   colorPrimary?: string;

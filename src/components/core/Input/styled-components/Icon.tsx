@@ -1,5 +1,5 @@
 import { Pressable } from "react-native";
-import { styled } from "../../../../theme";
+import { styled } from "../../../../config/theme";
 
 export default styled(
   Pressable,
