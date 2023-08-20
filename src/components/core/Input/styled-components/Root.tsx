@@ -1,5 +1,5 @@
-import { styled } from "../../../../config/theme";
 import { View } from "react-native";
+import { styled } from "../../../../config/theme";
 
 export default styled(
   View,
@@ -36,6 +36,11 @@ export default styled(
 
     _icon: {
       color: "$textLight400",
+    },
+
+    _web: {
+      maxWidth: 250,
+      width: "100%",
     },
 
     _dark: {

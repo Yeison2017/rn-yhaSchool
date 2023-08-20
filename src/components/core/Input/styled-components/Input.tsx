@@ -1,5 +1,5 @@
-import { styled } from "../../../../config/theme";
 import { TextInput } from "react-native";
+import { styled } from "../../../../config/theme";
 
 export default styled(
   TextInput,
@@ -13,7 +13,7 @@ export default styled(
     _dark: {
       color: "$textDark50",
       props: {
-        placeholderTextColor: "$textDark400",
+        // placeholderTextColor: "$textDark400",
       },
     },
     _web: {

@@ -1,3 +1,4 @@
+import { registerRootComponent } from "expo";
 import { StyleSheet } from "react-native";
 
 import { Providers } from "./src/config/providers";
@@ -18,6 +19,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default registerRootComponent(App);
+// export default App;
 
 const styles = StyleSheet.create({});

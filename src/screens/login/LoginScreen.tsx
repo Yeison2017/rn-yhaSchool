@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 
 import {
   Box,
@@ -20,7 +19,7 @@ const LoginScreen = () => {
       <Box style={styles.container}>
         <VStack style={styles.body}>
           <MobileLogin style={styles.mobileLogin} />
-          <Text style={styles.title}>INICIAR SESIÓN</Text>
+          <Text style={styles.title}>YHA School</Text>
 
           <VStack style={styles.containerInput}>
             <Input>
@@ -56,12 +55,13 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: "center",
-    fontSize: fontSizes.lg,
+    fontSize: fontSizes["2xl"],
+    lineHeight: fontSizes["2xl"],
     color: colors.primary700,
-    // fontFamily: "RobotoCondensed_400Regular",
   },
   containerInput: {
     gap: 8,
+    alignItems: "center",
   },
   button: {
     width: 142,
