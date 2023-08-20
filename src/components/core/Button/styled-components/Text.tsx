@@ -5,7 +5,7 @@ export default styled(
   Text,
   {
     color: "$textLight0",
-    fontFamily: "$textRegular",
+    fontFamily: "$textMedium",
     //@ts-ignore
     userSelect: "none",
   },

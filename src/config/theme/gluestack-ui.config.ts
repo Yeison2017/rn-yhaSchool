@@ -710,6 +710,7 @@ export const config = {
         body: undefined,
         mono: undefined,
         textRegular: FONTS_NAME.textRegular,
+        textMedium: FONTS_NAME.textMedium,
         textBold: FONTS_NAME.textBold,
       },
       fontSizes: {

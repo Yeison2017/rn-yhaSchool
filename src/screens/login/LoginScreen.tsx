@@ -19,7 +19,7 @@ const LoginScreen = () => {
       <Box style={styles.container}>
         <VStack style={styles.body}>
           <MobileLogin style={styles.mobileLogin} />
-          <Text style={styles.title}>YHA School</Text>
+          <Text style={styles.title}>YHASchool</Text>
 
           <VStack style={styles.containerInput}>
             <Input>
