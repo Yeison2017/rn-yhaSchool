@@ -1,5 +1,5 @@
-import { registerRootComponent } from "expo";
 import { StyleSheet } from "react-native";
+import { registerRootComponent } from "expo";
 
 import { Providers } from "./src/config/providers";
 import { useLoadFonts } from "./src/config/theme";
@@ -20,6 +20,5 @@ const App = () => {
 };
 
 export default registerRootComponent(App);
-// export default App;
 
 const styles = StyleSheet.create({});

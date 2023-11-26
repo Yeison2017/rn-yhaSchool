@@ -3,14 +3,16 @@ import { StyleSheet } from "react-native";
 import {
   Box,
   Button,
-  Text,
+  ButtonText,
   Input,
-  VStack,
+  InputField,
   MobileLogin,
   SafeAreaLayout,
-} from "../../components";
-import { colors, fontSizes } from "../../config/theme";
-import { useNavigationApp } from "../../interfaces";
+  Text,
+  VStack,
+} from "@/components";
+import { colors, fontSizes } from "@/config/theme";
+import { useNavigationApp } from "@/interfaces";
 
 const LoginScreen = () => {
   const { navigation } = useNavigationApp();
@@ -23,10 +25,10 @@ const LoginScreen = () => {
 
           <VStack style={styles.containerInput}>
             <Input>
-              <Input.Input placeholder="Usuario" />
+              <InputField placeholder="Usuario" />
             </Input>
             <Input>
-              <Input.Input placeholder="Contraseña" />
+              <InputField placeholder="Contraseña" />
             </Input>
           </VStack>
 
@@ -34,7 +36,7 @@ const LoginScreen = () => {
             onPress={() => navigation.navigate("Home")}
             style={styles.button}
           >
-            <Button.Text>Iniciar sesión</Button.Text>
+            <ButtonText>Iniciar sesión</ButtonText>
           </Button>
         </VStack>
       </Box>

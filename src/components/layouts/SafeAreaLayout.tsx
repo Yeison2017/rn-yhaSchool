@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-import { colors } from "../../config/theme";
-import { Box } from "../core";
 import { KeyboardAwareScrollView } from "@mtourj/react-native-keyboard-aware-scroll-view";
+
+import { Box } from "../core";
+import { colors } from "@/config/theme";
 
 interface Props {
   children: React.ReactNode;

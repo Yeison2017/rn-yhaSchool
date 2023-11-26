@@ -1,10 +1,11 @@
 import { config } from "./gluestack-ui.config";
 
-export const colors: typeof config.theme.tokens.colors =
-  config.theme.tokens.colors;
+const colorsTheme = config.tokens.colors;
+const fontSizesTheme = config.tokens.fontSizes;
+const fontsTheme = config.tokens.fonts;
 
-export const fontSizes: typeof config.theme.tokens.fontSizes =
-  config.theme.tokens.fontSizes;
+export const colors: typeof colorsTheme = colorsTheme;
 
-export const fontFamily: typeof config.theme.tokens.fonts =
-  config.theme.tokens.fonts;
+export const fontSizes: typeof fontSizesTheme = fontSizesTheme;
+
+export const fontFamily: typeof fontsTheme = fontsTheme;

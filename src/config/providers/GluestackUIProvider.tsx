@@ -1,17 +1,16 @@
-import { createProvider } from "@gluestack-ui/provider";
-import { StyledProvider } from "@gluestack-style/react";
-import { OverlayProvider } from "@gluestack-ui/overlay";
-import { ToastProvider } from "@gluestack-ui/toast";
+import { GluestackUIProvider as Provider } from "@gluestack-ui/themed";
 
-const GluestackUIStyledProvider = createProvider({ StyledProvider });
+import { config } from "../theme";
 
-const GluestackUIProvider = ({ children, ...props }: any) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const GluestackUIProvider = ({ children }: Props) => {
   return (
-    <GluestackUIStyledProvider {...props}>
-      <OverlayProvider>
-        <ToastProvider>{children}</ToastProvider>
-      </OverlayProvider>
-    </GluestackUIStyledProvider>
+    <Provider config={config} colorMode="light">
+      {children}
+    </Provider>
   );
 };
 
