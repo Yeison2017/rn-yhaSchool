@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from "react-native";
+import { registerRootComponent } from "expo";
 
-export default function App() {
+import { Providers } from "./src/config/providers";
+import { useLoadFonts } from "./src/config/theme";
+import { StackApp } from "./src/navigation";
+
+const App = () => {
+  const { fontsLoaded } = useLoadFonts();
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Providers>
+      <StackApp />
+    </Providers>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default registerRootComponent(App);
+
+const styles = StyleSheet.create({});
