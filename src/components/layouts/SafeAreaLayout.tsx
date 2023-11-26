@@ -29,7 +29,7 @@ const SafeAreaLayout = ({
             {children}
           </KeyboardAwareScrollView>
         ) : (
-          <>{children}</>
+          { children }
         )}
       </Box>
     </SafeAreaView>

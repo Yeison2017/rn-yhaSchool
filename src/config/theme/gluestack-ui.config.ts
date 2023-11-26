@@ -3,7 +3,7 @@ import { MotionAnimationDriver } from "@gluestack-style/legend-motion-animation-
 import { createConfig, createComponents } from "@gluestack-style/react";
 
 import * as componentsTheme from "./customComponents";
-// import { customColors, customFontSize, fonts } from "./customStyles";
+import { customColors, fonts } from "./customStyles";
 
 export const gluestackUIConfig = createConfig({
   aliases: {
@@ -313,19 +313,7 @@ export const gluestackUIConfig = createConfig({
       light700: "#44403c",
       light800: "#292524",
       light900: "#1c1917",
-      // ...customColors,
-      primary0: "#E5F1FB",
-      primary50: "#CCE9FF",
-      primary100: "#ADDBFF",
-      primary200: "#7CC2FF",
-      primary300: "#4AA9FF",
-      primary400: "#1A91FF",
-      primary500: "#0077E6",
-      primary600: "#005DB4",
-      primary700: "#004282",
-      primary800: "#002851",
-      primary900: "#011838",
-      primary950: "#000711",
+      ...customColors,
       secondary0: "#F6F6F6",
       secondary50: "#F3F3F3",
       secondary100: "#E9E9E9",
@@ -540,19 +528,9 @@ export const gluestackUIConfig = createConfig({
       extraBlack: "950",
     },
     fonts: {
-      heading: undefined,
-      body: undefined,
-      mono: undefined,
-      // ...fonts,
-      // heading: fontFamily.textRegular,
-      // body: fontFamily.textRegular,
-      // mono: fontFamily.textRegular,
-      // textRegular: fontFamily.textRegular,
-      // textMedium: fontFamily.textRegularSecondary,
-      // textBold: fontFamily.textBold,
+      ...fonts,
     },
     fontSizes: {
-      // ...customFontSize,
       "2xs": 10,
       xs: 12,
       sm: 14,
